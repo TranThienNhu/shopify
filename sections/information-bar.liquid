@@ -1,6 +1,6 @@
 {{ 'information-bar.css' | asset_url | stylesheet_tag }}
 
-<div class="information-bar">
+<div class="information-bar" style:"--information-bar-backgound: {{section.settings.backgound_color}}">
     {% for block in section.blocks %}
         <div class="information-column">
             <img src="{{ block.settings.image | img_url }}">
@@ -18,6 +18,11 @@
             "type": "header",
             "content": "Country Selector"
         },
+        {
+            "type": "color",
+            "id": "backgound_color",
+            "label": "Background color",
+        }
     ],
     "blocks": [
         {
