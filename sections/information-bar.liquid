@@ -1,0 +1,39 @@
+<div class="information-bar">
+    {% for block in section.blocks %}
+        <div class="information-column">
+            <img src="{{ block.settings.image | img_url }}">
+            <span>{{ block.settings.title }}</span>
+        </div>
+    {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Information bar",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Country Selector"
+    },
+  ],
+  "blocks": [
+        {
+            "type": "image",
+            "name": "Image",
+            "settings":[
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Text"
+                }
+            ]
+        }
+    ],
+}
+{% endschema %}
