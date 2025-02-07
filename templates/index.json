@@ -26,12 +26,12 @@
             "text_style": "body"
           }
         },
-        "button": {
+        "buttons_t6XA69": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop all",
             "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -41,7 +41,7 @@
       "block_order": [
         "heading",
         "text",
-        "button"
+        "buttons_t6XA69"
       ],
       "settings": {
         "image": "shopify://shop_images/1920x800-desktop-boxing-day-2024.webp",
