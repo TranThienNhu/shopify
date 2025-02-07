@@ -3,10 +3,11 @@
 <div class="information-bar" style="--information-bar-backgound: {{ section.settings.backgound_color }}">
     {% for block in section.blocks %}
         <div class="information-column">
-            <img src="{{ block.settings.image | img_url }}">
+            <img src="{{ block.settings.image | img_url }}" width="20" height="20">
             <span>{{ block.settings.title }}</span>
         </div>
     {% endfor %}
+  test preview
 </div>
 
 {% schema %}
