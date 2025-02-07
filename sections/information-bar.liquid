@@ -1,12 +1,4 @@
-{%- style -%}
-  .information-bar {
-    display: flex;
-  }
-  .information-column img {
-    width: 20px;
-    height: 20px;
-  }
-{%- endstyle -%}
+{{ 'information-bar.css' | asset_url | stylesheet_tag }}
 
 <div class="information-bar">
     {% for block in section.blocks %}
