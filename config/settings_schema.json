@@ -72,6 +72,12 @@
           },
           {
             "type": "color",
+            "id": "background_button",
+            "label": "Background button",
+            "default": "#121212"
+          },
+          {
+            "type": "color",
             "id": "secondary_button_label",
             "label": "t:settings_schema.colors.settings.secondary_button_label.label",
             "default": "#121212"
